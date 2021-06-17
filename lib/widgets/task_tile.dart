@@ -88,6 +88,7 @@ class TaskTile extends StatelessWidget {
         value: isChecked,
         onChanged: (bool? value) {
           chekboxCallback(value!);
+          print('changed !!!!!');
         },
       ),
     );
