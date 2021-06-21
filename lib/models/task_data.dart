@@ -13,12 +13,12 @@ class TaskData extends ChangeNotifier{
     return UnmodifiableListView(_tasks);
   }
 
+
   int get taskCount {
     return _tasks.length;
   }
 
   void addTask(String newTasktitle){
-    tasks.add(Task(name: 'sdfghj'));
     final task = Task(name: newTasktitle);
     _tasks.add(task);
     notifyListeners();

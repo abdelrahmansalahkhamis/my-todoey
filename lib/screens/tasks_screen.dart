@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ios/widgets/task_list.dart';
 import 'add_task_screen.dart';
-import 'package:ios/models/task.dart';
 import 'package:provider/provider.dart';
 import 'package:ios/models/task_data.dart';
 

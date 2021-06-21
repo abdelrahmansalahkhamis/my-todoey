@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:ios/models/task.dart';
 import 'package:ios/models/task_data.dart';
 import 'package:provider/provider.dart';
 
@@ -44,8 +43,7 @@ class AddTask extends StatelessWidget {
             FlatButton(
               onPressed: (){
                 //addTaskCallback(newTaskTitle);
-                Provider.of<TaskData>(context).addTask(newTaskTitle);
-                // Navigator.pop(context);
+                Provider.of<TaskData>(context, listen: false).addTask(newTaskTitle);
                 Navigator.pop(context);
             },
                 child: Text(

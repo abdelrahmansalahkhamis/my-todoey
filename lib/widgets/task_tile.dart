@@ -73,7 +73,7 @@ class TaskTile extends StatelessWidget {
 
 
 
-  @overridex
+  @override
   Widget build(BuildContext context) {
     return ListTile(
       onLongPress: longPressedCallback,
